@@ -83,7 +83,7 @@ export function Sidebar() {
                     isActive
                       ? 'bg-slate-100 border-l-4 border-l-slate-900 font-bold text-slate-900'
                       : 'hover:bg-slate-50 hover:text-slate-900 text-slate-500',
-                      !open && 'justify-center px-0 border-l-0'
+                    !open && 'justify-center px-0 border-l-0'
                   )}
                 >
                   <item.icon
@@ -114,19 +114,24 @@ export function Sidebar() {
             </Button>
           </div>
         ) : (
-           <div className="flex justify-center">
-             <Avatar fallback="AD" className="h-9 w-9 bg-slate-900 text-white rounded-none" />
+          <div className="flex justify-center">
+            <Avatar fallback="AD" className="h-9 w-9 bg-slate-900 text-white rounded-none" />
           </div>
         )}
       </div>
 
       {/* Toggle Button */}
-        <button
-          onClick={toggle}
-          className="absolute -right-3 top-24 flex h-6 w-6 items-center justify-center border border-slate-300 bg-white text-slate-500 hover:text-slate-900 hover:border-slate-900 shadow-none z-50 transition-all"
-        >
-          {open ? <ChevronLeft className="h-3 w-3" /> : <ChevronRight className="h-3 w-3" />}
-        </button>
+      <button
+        onClick={toggle}
+        className="absolute flex h-6 w-6 items-center justify-center border border-slate-300 bg-white text-slate-500 hover:text-slate-900 hover:border-slate-900 shadow-none z-50 transition-all"
+        style={{
+          left: open ? '240px' : '60px',
+          top: '50%',
+          zIndex: 999
+        }}
+      >
+        {open ? <ChevronLeft className="h-3 w-3" /> : <ChevronRight className="h-3 w-3" />}
+      </button>
     </motion.aside>
   );
 }
