@@ -67,3 +67,33 @@ export interface StatCardData {
   trend?: 'up' | 'down' | 'neutral';
   gradient: string;
 }
+
+export interface AttendanceTrend {
+  date: string;
+  present: number;
+  leave: number;
+  absent: number;
+}
+
+export interface DepartmentData {
+  name: string;
+  value: number;
+  color: string;
+}
+
+export interface RecentActivity {
+  user: string;
+  action: string;
+  time: string;
+}
+
+export interface DashboardSummary {
+  totalEmployees: number;
+  activeEmployees: number;
+  onLeaveEmployees: number;
+  attendanceRate: number;
+  attendanceTrend: AttendanceTrend[];
+  departmentDistribution: DepartmentData[];
+  recentActivities: RecentActivity[];
+}
+
