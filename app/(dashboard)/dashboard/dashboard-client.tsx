@@ -68,7 +68,7 @@ export default function DashboardClient({ summary }: DashboardClientProps) {
       <div className="grid gap-6 lg:grid-cols-2">
         <Card className="border shadow-none">
           <CardHeader>
-            <CardTitle>Attendance Trends</CardTitle>
+            <CardTitle>Trends</CardTitle>
           </CardHeader>
           <CardContent className="pl-2">
             <ResponsiveContainer width="100%" height={300}>
