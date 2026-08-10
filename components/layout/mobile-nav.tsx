@@ -22,7 +22,7 @@ export function MobileNav() {
       <SheetTrigger asChild>
         <Button variant="outline" size="icon" className="md:hidden border-slate-200">
           <Menu className="h-5 w-5 text-slate-900" />
-          <span className="sr-only">Toggle Menu</span>
+          <span className="sr-only">Menu</span>
         </Button>
       </SheetTrigger>
       <SheetContent side="left" className="p-0 border-r border-slate-200 w-[280px]">
