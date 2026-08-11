@@ -33,7 +33,7 @@ export function MobileNav() {
                <Target className="h-5 w-5" />
              </div>
              <div>
-               <h1 className="font-syne text-lg font-bold text-slate-900 leading-none">Minimal HR</h1>
+               <h1 className="font-syne text-lg font-bold text-slate-900 leading-none">Minimalist Template</h1>
              </div>
            </div>
         </div>
